@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Kontalk
+Comment=Kontalk official platform independent desktop client
+TryExec=kontalk
+Exec=kontalk %f
+Icon=/usr/share/pixmaps/kontalk.png
+Categories=Network;Java;

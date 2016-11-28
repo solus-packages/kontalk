@@ -1,0 +1,24 @@
+name       : kontalk
+version    : 3.1.2
+release    : 1
+source     :
+    - git|https://github.com/kontalk/desktopclient-java : v3.1.2
+license    : GPL-3.0
+component  : network.im
+summary    : A platform independent Java client for Kontalk
+description: |
+    A platform independent Java client for Kontalk
+builddeps  :
+    - gradle
+rundeps    :
+    - openjdk-8
+build      : |
+    export GRADLE_OPTS="-Dfile.encoding=utf-8"
+    gradle --no-daemon build
+install    : |
+    install -d $installdir/usr/share/kontalk
+    cp -R dist/* $installdir/usr/share/kontalk
+    chmod 00644 $installdir/usr/share/kontalk
+    install -D -m 00755 $pkgfiles/kontalk.sh $installdir/usr/bin/kontalk
+    install -D -m 00644 $pkgfiles/kontalk.desktop $installdir/usr/share/applications/kontalk.desktop
+    install -D -m 00644 $pkgfiles/kontalk.png $installdir/usr/share/pixmaps/kontalk.png

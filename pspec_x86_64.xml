@@ -1,0 +1,37 @@
+<PISI>
+    <Source>
+        <Name>kontalk</Name>
+        <Packager>
+            <Name>Bryan T. Meyers</Name>
+            <Email>bmeyers@datadrake.com</Email>
+        </Packager>
+        <License>GPL-3.0</License>
+        <PartOf>network.im</PartOf>
+        <Summary xml:lang="en">A platform independent Java client for Kontalk</Summary>
+        <Description xml:lang="en">A platform independent Java client for Kontalk
+</Description>
+        <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://solus-project.com/sources/README.Solus</Archive>
+    </Source>
+    <Package>
+        <Name>kontalk</Name>
+        <Summary xml:lang="en">A platform independent Java client for Kontalk</Summary>
+        <Description xml:lang="en">A platform independent Java client for Kontalk
+</Description>
+        <PartOf>network.im</PartOf>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share/applications/kontalk.desktop</Path>
+            <Path fileType="data">/usr/share/kontalk</Path>
+            <Path fileType="data">/usr/share/pixmaps/kontalk.png</Path>
+        </Files>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2016-11-28</Date>
+            <Version>3.1.2</Version>
+            <Comment>Packaging update</Comment>
+            <Name>Bryan T. Meyers</Name>
+            <Email>bmeyers@datadrake.com</Email>
+        </Update>
+    </History>
+</PISI>
